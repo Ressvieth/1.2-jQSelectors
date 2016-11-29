@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 2 Bootcamp Front-End</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1 class="heading">1. Wszystkie elementy &lt;div&gt;, posiadające zarówno klasę "grid" oraz klasę "grid-12"</h1>
+
+        <div class="row">
+            <div class="grid grid-6">Cell 1</div>
+            <div class="grid grid-6">Cell 2</div>
+        </div>
+        <div class="row">
+            <div class="grid grid-12">Cell 3</div>
+        </div>
+        <div class="row">
+            <div class="grid grid-12">Cell 4</div>
+        </div>
+        <div class="row">
+            <div class="grid grid-6">Cell 5</div>
+            <div class="grid grid-6">Cell 6</div>
+        </div>
+
+    </div>
+
+    <div class="container">
+
+        <h1 class="heading">2. Wszystkie elementy &lt;a&gt;, których atrybut "href" zaczyna się na "http", znajdujące się w elemencie o klasie "nav"</h1>
+
+        <nav class="nav">
+            <a href="#">O nas</a>
+            <a href="http://www.codecademy.com/Resvieth">Kontakt</a>
+            <a href="#">Regulamin</a>
+        </nav>
+
+    </div>
+
+    <div class="container">
+
+        <h1 class="heading">3. Wszystkie elementy &lt;input&gt;, których typ to "radio" lub "checkbox" oraz dodatkowo nie są aktualnie zaznaczone (checked).</h1>
+
+        <form action="">
+            <label>Imię:</label> <input type="text" name="name">
+            <br><br>
+            <label>Mężczyzna:</label> <input type="radio" name="gender" value="male" checked>
+            <label>Kobieta:</label> <input type="radio" name="gender" value="female">
+            <br><br>
+            <label>Pełnoletni?</label> <input type="checkbox">
+        </form>
+
+    </div>
+
+    <div class="container">
+
+        <h1 class="heading">Wyłącznie pierwszy element &lt;p&gt;, który jest pusty (nie zawiera dzieci) oraz znajduje się w elemencie &lt;div&gt; z identyfikatorem "text"</h1>
+        <h1 class="heading" style="text-align:center">Usunięty przez jQuery</h1>
+
+        <div id="text" class="text">
+            <p>Lorem ipsum dolor sit amet, <strong>consectetur</strong> adipisicing elit. Corrupti, ratione!</p>
+            <p>Lorem ipsum dolor sit amet, <strong>consectetur</strong> adipisicing elit. Corrupti, ratione!</p>
+            <p></p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, ratione!</p>
+            <p></p>
+        </div>
+
+    </div>
+
+    <div class="container">
+
+        <h1 class="heading">5. Wszystkie elementy z klasą "pagination-item", które nie są elementem &lt;span&gt;</h1>
+
+        <div class="pagination">
+            <a href="/page/1" class="pagination-item">1</a>
+            <a href="/page/2" class="pagination-item">2</a>
+            <span class="pagination-item pagination-item--current">3</span>
+            <a href="/page/4" class="pagination-item">4</a>
+
+        </div>
+
+    </div>
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="./js/jQSelectors.js"></script>
+</body>
+</html>
